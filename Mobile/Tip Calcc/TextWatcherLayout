@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#76F851"
+    tools:context=".MainActivity">
+
+    <!--left top at bottom and bottom at top-->
+
+    <TextView
+        android:id="@+id/billTotal"
+        android:layout_width="124dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="-380dp"
+        android:text="Total"
+        android:textColor="#AA00FF"
+        android:textColorHighlight="#AA00FF"
+        android:textColorHint="#AA00FF"
+        android:textColorLink="#AA00FF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/UserBill"
+        app:layout_constraintTop_toBottomOf="@+id/TipAmount"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <TextView
+        android:id="@+id/TipAmount"
+        android:layout_width="124dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="-200dp"
+        android:text="Tip $"
+        android:textColor="#E30E0E"
+        android:textColorHighlight="#E30E0E"
+        android:textColorHint="#E30E0E"
+        android:textColorLink="#E30E0E"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/UserBill"
+        app:layout_constraintTop_toBottomOf="@+id/UserTipAmount"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/UserTipAmount"
+        android:layout_width="124dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="-30dp"
+        android:text="Tip (%)"
+        android:textColor="#E30E0E"
+        android:textColorHighlight="#E30E0E"
+        android:textColorHint="#E30E0E"
+        android:textColorLink="#E30E0E"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/UserBill"
+        app:layout_constraintTop_toTopOf="@+id/UserBill"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <TextView
+        android:id="@+id/UserBill"
+        android:layout_width="124dp"
+        android:layout_height="53dp"
+        android:text="Bill"
+        android:textColor="#AA00FF"
+        android:textColorHighlight="#AA00FF"
+        android:textColorHint="#AA00FF"
+        android:textColorLink="#AA00FF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <!--right side top to bottom-->
+
+    <EditText
+        android:id="@+id/UserInputBill1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="32dp"
+        android:ems="5"
+        android:hint="Enter Bill"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:textColor="#115DDF"
+        android:textColorHighlight="#115DDF"
+        android:textColorHint="#115DDF"
+        android:textColorLink="#115DDF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UserBill"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userInputTip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:hint="Enter Tip"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:textColor="#115DDF"
+        android:textColorHighlight="#115DDF"
+        android:textColorHint="#115DDF"
+        android:textColorLink="#115DDF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/UserTipAmount"
+        app:layout_constraintStart_toStartOf="@+id/UserInputBill1"
+        app:layout_constraintTop_toTopOf="@+id/UserTipAmount" />
+
+    <TextView
+        android:id="@+id/UserTipFinalAmount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00897B"
+        android:textColorHighlight="#00897B"
+        android:textColorHint="#00897B"
+        android:textColorLink="#00897B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TipAmount"
+        app:layout_constraintStart_toStartOf="@+id/userInputTip1"
+        app:layout_constraintTop_toTopOf="@+id/TipAmount"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/userTotalFinalAmount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00897B"
+        android:textColorHighlight="#00897B"
+        android:textColorHint="#00897B"
+        android:textColorLink="#00897B"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/billTotal"
+        app:layout_constraintStart_toStartOf="@+id/UserTipFinalAmount1"
+        app:layout_constraintTop_toTopOf="@+id/billTotal"
+        tools:text="TextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

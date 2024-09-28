@@ -1,0 +1,128 @@
+/*global*/
+h1 {
+    font-size:130px;
+}
+
+h2{
+    font-size:90px; 
+}
+
+h3 {
+    font-size:40px;
+    font-weight: bold;
+}
+
+p{
+    font-size:60px;
+}
+
+a{
+    font-size:45px;
+}
+
+hr{
+    color: white;
+}
+
+.background{
+    width: 1920px;
+    height: 1080px;
+    background: #BBD4E1;
+    font-family: "garamond";
+}
+
+.background2{
+    width: 1920px;
+    height: 1080px;
+    background: #A3B2B9;
+    font-family: "garamond";
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padding{
+    padding-bottom: 30px;
+}
+
+.floatLeft{
+    float: left;  
+}
+
+.floatRight{
+    float: right;  
+}
+
+.inlineBlock{
+    display: inline-block;  
+}
+
+.block{
+    display: block; 
+}
+
+.clear{
+    clear: both;
+}
+
+/*Home*/
+.artPicture{
+    width: 900px;
+    height: 400px;
+}
+
+/*About me*/
+.selfPicture{
+    width: 500px;
+    height: 600px;
+}
+
+.picture{
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.aboutText{
+    margin-left: 30px;
+    font-size: 50px;
+}
+/*Skills*/
+.skills{
+    font-size:30px;
+    margin-left: 40px;
+}
+
+.centerEducation{
+    margin-left: 500px;   
+}
+
+/*Portfolio*/
+.portfolioPictures{
+    height: 210px;
+    width: 210px;
+    padding: 10px;
+}
+
+.portfolioText{
+    font-size:30px;
+}
+
+.innovatingHotelManagementOther{
+    font-size:30px;
+    margin-left: 40px;
+}
+
+.PokerFuture{
+    font-size:30px;
+    margin-right: 40px;
+}
+
+/*Contact*/
+.linkedin{
+    font-size:60px;
+}
+
+/*add nav and bottom*/
